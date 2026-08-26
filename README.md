@@ -85,6 +85,13 @@ npm run pack:check
 | `--dsh-home` | `~/.dsh` | DSH home directory |
 | `--json` | false | JSON output |
 
+## Roadmap
+
+- Publish to npm
+- Integrate with DSH main Web UI
+- Full tool-call protocol support
+- More provider discovery sources
+
 ## License
 
 MIT

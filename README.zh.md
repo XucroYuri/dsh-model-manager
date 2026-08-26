@@ -91,3 +91,11 @@ npm run pack:check
 |---|---|---|
 | `--dsh-home` | `~/.dsh` | DSH 主目录 |
 | `--json` | false | JSON 输出 |
+
+
+## 路线图
+
+- 发布到 npm
+- 集成 DSH 主 Web UI
+- 完整 tool-call 协议支持
+- 更多模型发现来源
