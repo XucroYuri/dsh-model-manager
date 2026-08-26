@@ -43,8 +43,13 @@ export async function apply(ctx) {
 
     if (command === 'list') {
       const filter = args.find((a, i) => a === '--provider' && args[i+1]) ? args[args.indexOf('--provider')+1] : undefined
-      for (const row of listModels(providers, filter)) {
-        console.log(`${row.provider}/${row.id}${row.name ? ` (${row.name})` : ''}`)
+      const rows = listModels(providers, filter)
+      if (args.includes('--json')) {
+        console.log(JSON.stringify(rows, null, 2))
+      } else {
+        for (const row of rows) {
+          console.log(`${row.provider}/${row.id}${row.name ? ` (${row.name})` : ''}`)
+        }
       }
       finish(0); return
     }
