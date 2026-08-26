@@ -1,34 +1,34 @@
 # dsh-model-manager
 
-Manage enabled model allowlists in DeepSeek Harness to keep model pickers clean.
+管理 DeepSeek Harness 中已启用的模型白名单，让模型选择器保持简洁。
 
-> Status: Stable
+> 状态：稳定
 
-## Features
+## 功能特性
 
-- List enabled models
-- Enable/disable models
-- Search models
-- Write to llm-pi-ai provider models
-- Native Cordis command plugin
+- 查看已启用模型
+- 启用/禁用模型
+- 搜索模型
+- 写入 llm-pi-ai provider models
+- 原生 Cordis 命令插件
 
-## Requirements
+## 环境要求
 
 - DeepSeek Harness (DSH) 0.1.1+
-- OpenCode CLI (optional, for sync/catalog/bridge features)
+- OpenCode CLI（可选，用于 sync/catalog/bridge 功能）
 - Node.js 22+
-- Python 3.12+ (only for fallback CLI tests)
+- Python 3.12+（仅用于备用 CLI 测试）
 
-## Installation
+## 安装
 
-Add the plugin to your DSH profile:
+将插件添加到 DSH profile：
 
 ```bash
 cd ~/.dsh/profiles/tools
 npm install @xucroyuri/dsh-model-manager
 ```
 
-Then add to `cordis.patch.yml`:
+然后在 `cordis.patch.yml` 中添加：
 
 ```yaml
 - insert:
@@ -36,7 +36,7 @@ Then add to `cordis.patch.yml`:
       name: '@xucroyuri/dsh-model-manager'
 ```
 
-## Usage
+## 使用方法
 
 ```bash
 dsh --profile tools models list
@@ -45,13 +45,13 @@ dsh --profile tools models disable deepseek/deepseek-v4-flash
 dsh --profile tools models search glm
 ```
 
-## Development
+## 开发
 
 ```bash
 node --check src/index.js
 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-## License
+## 许可证
 
 MIT

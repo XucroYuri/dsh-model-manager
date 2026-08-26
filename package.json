@@ -1,7 +1,7 @@
 {
   "name": "@xucroyuri/dsh-model-manager",
   "version": "0.2.0",
-  "description": "Manage enabled model allowlists in DeepSeek Harness",
+  "description": "Manage enabled model allowlists in DeepSeek Harness to keep model pickers clean.",
   "type": "module",
   "main": "src/index.js",
   "exports": {
@@ -13,5 +13,22 @@
     "README.md",
     "LICENSE"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "model-manager",
+    "allowlist",
+    "llm",
+    "models"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XucroYuri/dsh-model-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XucroYuri/dsh-model-manager/issues"
+  },
+  "homepage": "https://github.com/XucroYuri/dsh-model-manager#readme",
+  "author": "XucroYuri"
 }
