@@ -1,5 +1,7 @@
 # dsh-model-manager
 
+![CI](https://github.com/XucroYuri/dsh-model-manager/actions/workflows/ci.yml/badge.svg) ![License](https://img.shields.io/github/license/XucroYuri/dsh-model-manager)
+
 管理 DeepSeek Harness 中已启用的模型白名单，让模型选择器保持简洁。
 
 > 状态：稳定

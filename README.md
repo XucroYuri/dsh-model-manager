@@ -1,5 +1,7 @@
 # dsh-model-manager
 
+![CI](https://github.com/XucroYuri/dsh-model-manager/actions/workflows/ci.yml/badge.svg) ![License](https://img.shields.io/github/license/XucroYuri/dsh-model-manager)
+
 Manage enabled model allowlists in DeepSeek Harness to keep model pickers clean.
 
 > Status: Stable
