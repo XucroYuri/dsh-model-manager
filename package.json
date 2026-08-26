@@ -36,5 +36,8 @@
   },
   "bin": {
     "dsh-model-manager": "bin/dsh-model-manager.js"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
