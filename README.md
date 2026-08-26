@@ -76,6 +76,13 @@ npm run smoke
 npm run pack:check
 ```
 
+## Configuration
+
+| Option | Default | Description |
+|---|---|---|
+| `--dsh-home` | `~/.dsh` | DSH home directory |
+| `--json` | false | JSON output |
+
 ## License
 
 MIT
