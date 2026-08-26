@@ -1,4 +1,5 @@
 // Native DSH Cordis plugin for model allowlist management.
+import { readFileSync } from 'node:fs'
 export const name = 'dsh-model-manager'
 export const description = 'Manage enabled model allowlists in DeepSeek Harness'
 export const inject = ['settings', 'credentials']
@@ -20,6 +21,13 @@ function listModels(providers, providerFilter) {
 
 export async function apply(ctx) {
   const args = ctx.get('cmdlineArgs')?.get() ?? []
+  if ((args[0] === 'models' || args[0] === 'model-manager') && (args.includes('--version') || args.includes('-v'))) {
+    const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'))
+    console.log(pkg.version)
+    const exit = ctx.get('appExit')
+    if (exit) exit(0)
+    return
+  }
   if (args[0] !== 'models' && args[0] !== 'model-manager') return
 
   const appExit = ctx.get('appExit')
