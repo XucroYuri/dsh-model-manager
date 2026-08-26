@@ -28,6 +28,13 @@ Add the plugin to your DSH profile:
 ```bash
 cd ~/.dsh/profiles/tools
 npm install @xucroyuri/dsh-model-manager
+
+
+Or install directly from GitHub:
+
+```bash
+npm install github:XucroYuri/dsh-model-manager
+```
 ```
 
 Then add to `cordis.patch.yml`:
